@@ -1,0 +1,31 @@
+{
+	"name": "@veams/base",
+	"version": "1.0.0",
+	"description": "Base Class for Components and Services",
+	"main": "lib/index.js",
+	"scripts": {
+		"build": "tsc --project tsconfig.json --outDir lib --declarationDir lib --declaration --module commonjs",
+		"dev": "tsc --project tsconfig.json --watch --outDir lib --declarationDir lib --declaration --module commonjs",
+		"prepublish": "npm run build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Veams/base.git"
+	},
+	"keywords": [
+		"Veams"
+	],
+	"author": "Sebastian Fitzner",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/Veams/base/issues"
+	},
+	"homepage": "https://github.com/Veams/base#readme",
+	"devDependencies": {
+		"typescript": "^2.7.1"
+	},
+	"dependencies": {
+		"@veams/helpers": "^1.2.1",
+		"deepmerge": "^2.0.1"
+	}
+}
