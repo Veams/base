@@ -4,7 +4,7 @@
  * options merging and
  * saving of standard stuff.
  *
- * @module VeamsBase
+ * @module Base
  * @author Sebastian Fitzner
  */
 
@@ -15,13 +15,13 @@ import * as merge from 'deepmerge';
 import mixinHelper, { mixinType } from '@veams/helpers/lib/function/mixin';
 import makeIdHelper from '@veams/helpers/lib/utility/make-id';
 
-export interface VeamsBaseConfig {
+export interface BaseConfig {
 	namespace?: string;
 	el?: HTMLElement;
 	options?: any;
 }
 
-class VeamsBase {
+class Base {
 	options: any;
 	_namespace: string;
 	_instanceId: string | number;
@@ -34,13 +34,13 @@ class VeamsBase {
 	 * to save standard elements like el and options and
 	 * execute initialize as default method.
 	 *
-	 * @param {Object} VeamsBaseConfig - See interface.
-	 * @param {String} VeamsBaseConfig.namespace - Add custom namespace to your class.
-	 * @param {Object} VeamsBaseConfig.el - Save element in class.
-	 * @param {Object} VeamsBaseConfig.options - Options passed by init process.
+	 * @param {Object} BaseConfig - See interface.
+	 * @param {String} BaseConfig.namespace - Add custom namespace to your class.
+	 * @param {Object} BaseConfig.el - Save element in class.
+	 * @param {Object} BaseConfig.options - Options passed by init process.
 	 * @param {Object} opts [{}] - Object which contains options of the extended class.
 	 */
-	constructor({namespace, el, options}: VeamsBaseConfig, opts = {}) {
+	constructor({namespace, el, options}: BaseConfig, opts = {}) {
 		this.namespace = namespace || 'base';
 		this.instanceId = this.namespace;
 		this.options = opts;
@@ -89,4 +89,4 @@ class VeamsBase {
 	}
 }
 
-export default VeamsBase;
+export default Base;
