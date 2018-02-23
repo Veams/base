@@ -11,7 +11,7 @@
 /**
  * Imports
  */
-import merge from 'deepmerge';
+import * as mergeHelper from 'deepmerge';
 import mixinHelper, { mixinType } from '@veams/helpers/lib/function/mixin';
 import makeIdHelper from '@veams/helpers/lib/utility/make-id';
 
@@ -20,6 +20,9 @@ export interface BaseConfig {
 	el?: HTMLElement;
 	options?: any;
 }
+
+// Workaround for browserify and webpack bundling
+const merge = mergeHelper.default || mergeHelper;
 
 class Base {
 	options: any;
