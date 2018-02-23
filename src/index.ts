@@ -11,7 +11,7 @@
 /**
  * Imports
  */
-import * as merge from 'deepmerge';
+import merge from 'deepmerge';
 import mixinHelper, { mixinType } from '@veams/helpers/lib/function/mixin';
 import makeIdHelper from '@veams/helpers/lib/utility/make-id';
 

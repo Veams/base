@@ -1,12 +1,12 @@
 {
 	"name": "@veams/base",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Base Class for Components and Services",
 	"main": "./lib/index.js",
 	"types": "./lib/index.d.ts",
 	"scripts": {
 		"build": "tsc --project tsconfig.json --outDir lib --declarationDir lib --declaration --module commonjs",
-		"dev": "tsc --project tsconfig.json --watch --outDir lib --declarationDir lib --declaration --module commonjs",
+		"start": "tsc --project tsconfig.json --watch --outDir lib --declarationDir lib --declaration --module commonjs",
 		"prepublish": "npm run build"
 	},
 	"repository": {
