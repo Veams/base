@@ -1,3 +1,8 @@
+[//]: # ({{#wrapWith "content-section"}})
+
+[//]: #     ({{#wrapWith "grid-row"}})
+[//]: #         ({{#wrapWith "grid-col" colClasses="is-col-mobile-l-8"}})
+
 # Base (@veams/base)
 
 **Base Class for Components and Services which will be used in Veams projects.**
@@ -77,3 +82,8 @@ const test = new Test({
 	"_el": {}
 }
 ```
+
+[//]: #         ({{/wrapWith}})
+[//]: #     ({{/wrapWith}})
+
+[//]: # ({{/wrapWith}})
